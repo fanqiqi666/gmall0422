@@ -5,6 +5,7 @@ import com.atguigu.gmall0422.bean.*;
 import com.atguigu.gmall0422.manage.mapper.*;
 import com.atguigu.gmall0422.service.ManageService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -56,6 +57,7 @@ public class ManageServiceImpl implements ManageService {
     }
 
     @Override
+    @Transactional
     public void saveBaseAttrInfo(BaseAttrInfo baseAttrInfo) {
         //如何判断请求时修改，还是保存，根据id判断
         if (baseAttrInfo.getId()!=null && baseAttrInfo.getId().length()>0){
