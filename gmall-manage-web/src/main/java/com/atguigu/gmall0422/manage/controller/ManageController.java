@@ -59,4 +59,6 @@ public class ManageController {
         //返回该对象的平台属性值集合
         return baseAttrInfo.getAttrValueList();
     }
+
+
 }

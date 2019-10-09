@@ -29,4 +29,14 @@ public interface ManageService {
      * @return
      */
     BaseAttrInfo getBaseAttrInfo(String attrId);
+
+    //获取商品基本信息
+    List<SpuInfo> getSpuInfoList(SpuInfo spuInfo);
+
+    //获取商品销售属性名称信息
+    List<BaseSaleAttr> getBaseSaleAttrList();
+
+    //保存spuInfo信息
+    //http://localhost:8082/saveSpuInfo
+    void saveSpuInfo(SpuInfo spuInfo);
 }
