@@ -23,6 +23,7 @@ public class ManageController {
     //根据一级分类id查询二级分类
     @RequestMapping("getCatalog2")
     public List<BaseCatalog2> getCatalog2(String catalog1Id){
+
         return manageService.getCatalog2(catalog1Id);
     }
     //根据二级分类id查询三级分类
@@ -33,6 +34,7 @@ public class ManageController {
     //根据三级id查询商品信息
     @RequestMapping("attrInfoList")
     public List<BaseAttrInfo> attrInfoList(String catalog3Id){
+
         return manageService.getAttrList(catalog3Id);
     }
 
